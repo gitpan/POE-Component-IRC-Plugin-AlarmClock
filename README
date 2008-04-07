@@ -1,0 +1,45 @@
+POE-Component-IRC-Plugin-AlarmClock
+
+This module is a L<POE::Component::IRC> plugin which uses
+L<POE::Component::IRC::Plugin> for its base. It provides interface to
+to remind forgetful users of some evens as an alarm clock.
+It accepts input from public channel events, C</notice> messages as well
+as C</msg> (private messages); although that can be configured at will.
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc POE::Component::IRC::Plugin::AlarmClock
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=POE-Component-IRC-Plugin-AlarmClock
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/POE-Component-IRC-Plugin-AlarmClock
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/POE-Component-IRC-Plugin-AlarmClock
+
+    Search CPAN
+        http://search.cpan.org/dist/POE-Component-IRC-Plugin-AlarmClock
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2008 Zoffix Znet
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
