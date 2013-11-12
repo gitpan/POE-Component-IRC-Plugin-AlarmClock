@@ -3,7 +3,7 @@ package POE::Component::IRC::Plugin::AlarmClock;
 use warnings;
 use strict;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 use POE;
 use Carp;
@@ -104,7 +104,7 @@ sub _alarm_rang {
     $self->{irc}->yield( $type => $where => $out_message )
         if $self->{auto};
 
-    $self->{irc}->_send_event(
+    $self->{irc}->send_event(
         $self->{response_event} => {
             rang => 1,
             out  => $out_message,
@@ -322,6 +322,8 @@ sub _message_into_response_event { 'out' }
 
 1;
 __END__
+
+=encoding utf8
 
 =head1 NAME
 

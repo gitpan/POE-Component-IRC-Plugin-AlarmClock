@@ -14,7 +14,9 @@ my $builder = Module::Build->new(
         'Carp'                                  => 1.04,
         'POE'                                   => 0.9999,
         'POE::Component::IRC::Plugin::BaseWrap' => 0.004,
+        'perl' => '5.006',
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'POE-Component-IRC-Plugin-AlarmClock-*' ],
     create_makefile_pl => 'traditional',
 );

@@ -3,13 +3,13 @@
 use strict;
 use warnings;
 
-use lib '../lib';
+use lib qw(../lib  lib);
 
 use POE qw(Component::IRC  Component::IRC::Plugin::AlarmClock);
 
 my $irc = POE::Component::IRC->spawn(
     nick        => 'AlarmClockBot',
-    server      => 'localhost',
+    server      => 'irc.freenode.net',
     port        => 6667,
     ircname     => 'AlarmClock bot',
     plugin_debug => 1,
